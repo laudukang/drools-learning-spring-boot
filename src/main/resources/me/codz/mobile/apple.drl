@@ -1,0 +1,25 @@
+package me.codz.mobile;
+import me.codz.drools.service.UserService
+import me.codz.drools.model.User
+dialect  "mvel"
+
+global UserService userService
+
+rule "apple"
+    no-loop true
+    when
+    $user:User()
+    then
+    System.out.println("apple mobile");
+    $user.setName("laudukang");
+//    update($user)
+end
+
+rule "another"
+    no-loop true
+    when
+    $user:User(name == "laudukang")
+    then
+    System.out.println($user.getName());
+    System.out.println("another");
+end

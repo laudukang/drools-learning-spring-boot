@@ -1,0 +1,13 @@
+package me.codz;
+import me.codz.drools.service.UserService
+dialect  "mvel"
+
+global UserService userService
+
+rule "hi"
+    when
+
+    then
+    System.out.println("hi lau");
+//    userService.hi();
+end

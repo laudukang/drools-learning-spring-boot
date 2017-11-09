@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="DefaultKB" packages="me.codz*">
+        <ksession name="DefaultKS"/>
+    </kbase>
+    <kbase name="BookKB" packages="me.codz.book">
+        <ksession name="BookKS"/>
+    </kbase>
+    <kbase name="MobileKB" packages="me.codz.mobile" includes="BaseKB">
+        <ksession name="MobileKS"/>
+    </kbase>
+    <kbase name="BaseKB" packages="me.codz.base">
+        <ksession name="BaseKS"/>
+    </kbase>
+</kmodule>

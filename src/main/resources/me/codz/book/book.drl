@@ -1,0 +1,12 @@
+package me.codz.book;
+import me.codz.drools.service.UserService
+dialect  "mvel"
+
+global UserService userService
+
+rule "book"
+    when
+    then
+    System.out.println("in book");
+    userService.hi();
+end
